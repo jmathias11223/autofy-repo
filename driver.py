@@ -115,7 +115,7 @@ def list_curr_music(name, begin, spotify):
 
 # Setup
 
-spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(client_id='890de9f4f84e4cce84b9b8faff5f9db7', client_secret='1e328fc339a7415fa3dd64ecdd473e4a'))
+spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
 artists = get_artists("artists.txt")
 
 date = DT.date.today() - DT.timedelta(days=7)
